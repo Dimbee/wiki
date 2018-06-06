@@ -1,0 +1,15 @@
+<p style = "text-align: center; color: white">Username | Join Date | Permission To Edit<br>
+	<% @list2.each do |liste| %>
+<article style = "text-align: center">
+	<p style = "color: yellow">
+		<%= liste.username %> | <%= liste.date_joined %> | <%= liste.edit %></p>
+		<form action="/user/<%= liste.username %>" method="post" id="edit">
+			<input type="hidden" name="_method" value="put">
+			<input type="checkbox" name="edit" <%= "checked" if liste.edit %>>
+			<input type="submit" value="Allow to Edit">
+		</form>
+		<a href="/user/delete/<%= liste.username %>"><input type = "submit" value = "Delete User"></a>
+		 <a href="/user/edit/<%= liste.username %>"><input type = "submit" value="Change Username"></a>
+	</p>
+</article>
+<% end %>

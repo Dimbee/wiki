@@ -1,0 +1,153 @@
+/* <!-- code adopted from:
+#Title: "CSS Tutorial" 
+#Author: W3Schools Online Web Tutorials
+#Availability: https://www.w3schools.com/css/ */
+
+body { 
+	background-image: url("/background.jpg"); /*[19] /* Magnus B. http://assets.fightland.com/content-images/contentimage/60247/the-year-of-conor-mcgregor.jpg. 2016. */
+	font-family: Open Sans;
+	width: 1200px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.homepagetext {
+	text-align: center;
+	border-style: groove; 
+	background: #ffffff; 
+	color: black;
+	opacity: 0.70;
+	font-size: 150%;
+}	
+
+div.homepagetext1 {
+	background-color:#EEEEEE ; 
+	color: black; height: 400px; 
+	width: 900px; 
+	float:right; 
+	opacity: 0.80; 
+	font-size: 120%; 
+	font-style: italic;
+	position: inline;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-align: justify;
+}
+
+div.sidebar {
+	padding: 15px;
+	text-align: left; 
+	color: #33cc33; 
+	font-size: 20px; 
+	font-weight: bold; 
+	font-style: italic;
+	list-style: none;
+}
+
+a {
+	font-size: 18px;
+	color: yellow;
+	text-align: right;     
+}
+
+#b {
+	position: absolute;
+    left: 170px;
+    width: 300px;
+    padding: 0px;
+    text-align: left;
+}
+
+div.navigate {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	color: red;
+}
+
+header {
+	padding-bottom: 30px;
+}
+
+#clips {
+	display: block;
+	right: 25px;
+	position: absolute;
+	top: 25%;
+}
+
+div.editbutton { 
+	word-spacing: 100px;
+}
+
+.button {
+	font-family: Comic Sans MS; 
+	margin-top: 50px;
+    color: black;
+    padding: 25px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 13px;
+    cursor: pointer;
+	background-color: #33cc33;
+	border-radius: 50px;
+} 
+
+.button1 { 
+	font-family: Comic Sans MS; 
+    color: black;
+    padding: 25px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 13px;
+    cursor: pointer;
+	background-color: #ffffff;
+	border-radius: 50px;	
+} 
+
+.button2 { 
+	font-family: Comic Sans MS; 
+    color: black;
+    padding: 25px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+	background-color: #ff8533;
+	border-radius: 50px;
+} 
+
+div.questions {
+    position: absolute;
+    left: 200px;
+    width: 500px;
+    height: 120px;
+}
+
+div.questions1 {
+	position: absolute;
+    right: 150px;
+    width: 500px;
+    height: 120px;
+}
+
+div.answers {
+    position: absolute;
+    left: 200px;
+    width: 500px;
+    height: 120px;
+}
+
+div.answers1 {
+	position: absolute;
+    right: 150px;
+    width: 500px;
+    height: 120px;
+}

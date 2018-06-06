@@ -1,0 +1,11 @@
+<h2 style = "color: yellow">Below you can edit the homepage text</h2><br>
+<form action="/edit" method= "post" id= "edit"> 
+	<input type = "hidden" name = "_method" value = "put">
+	<textarea rows = "15" cols = "70" name = "message"><%=@info%></textarea><br><br>
+	<input type = "submit" class = "button1" style = "font-family: Comic Sans MS; font-weight: bold" value = "Update">
+</form>
+<div class = "editbutton">
+	<a href = "/reset" style = "color: #33cc33;text-decoration: none">Reset</a>
+	<a href = "/backup" style = "color: #33cc33;text-decoration: none">Backup</a>
+	<a href = "/restore" style = "color: #33cc33; text-decoration: none;  word-spacing: 4px;">Restore From Backup</a> 
+</div>

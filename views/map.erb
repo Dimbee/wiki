@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="color: #000000; background: #EEEEEE; opacity: 0.50;filter: alpha(opacity=50px)";><h2>Next UFC Event - UFC Fight Night 21/10/17 </h2>
+<p style = "font-weigth: bold";>The next UFC Event will take place on October 21st 2017 at the Ergo Arena in Gdansk, Poland. The main event is the fight between Donald "Cowboy" Cerrone vs. Darren Till [20].</p></div>
+
+<!-- code adopted from:
+#Title: "Google Maps Tutorial" 
+#Author: W3Schools Online Web Tutorials
+#Availability: https://www.w3schools.com/graphics/google_maps_intro.asp -->	
+
+<div id="ufc" style="width:1200px;height:550px; position: center"></div>
+
+	<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(54.4266906, 18.5760152);
+  var mapCanvas = document.getElementById("ufc");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script><br><br>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<div class = "answers">
+<h3>When was Conor born?</h3>
+<% if @birthday %>
+<p>Your answer - <%=@birthday%></p>
+<% if correctanswer?(@birthday) %>
+  <p style = "color: #33cc33">Your answer is correct</p>
+<% else %>
+	<p style = "color: #cc0000">Your answer is wrong</p>
+<% end %>  
+<% end %>
+<br>
+
+<h3>Whed did Conor join UFC?</h3>
+<% if @joinufc %>
+<p>Your answer - <%=@joinufc%></p>
+<% if correctanswer?(@joinufc) %>
+  <p style = "color: #33cc33">Your answer is correct</p>
+<% else %>
+	<p style = "color: #cc0000">Your answer is wrong</p>
+<% end %> 
+<% end %>
+<br>
+
+<h3>Who did Conor beat for the Lightweight Championship?</h3>
+<% if @championship %>
+<p>Your answer - <%=@championship%></p>
+<% if correctanswer?(@championship) %>
+  <p style = "color: #33cc33">Your answer is correct</p>
+<% else %>
+	<p style = "color: #cc0000">Your answer is wrong</p>
+<% end %> 
+<% end %>
+<br>
+</div>
+
+<div class = "answers1">
+<h3>Did Conor beat the record for the fastest knockout in a title fight?</h3>
+<% if @record %>
+<p>Your answer - <%=@record%></p>
+<% if correctanswer?(@record) %>
+  <p style = "color: #33cc33">Your answer is correct</p>
+<% else %>
+	<p style = "color: #cc0000">Your answer is wrong</p>
+<% end %> 
+<% end %>
+<br>
+
+<h3>What is Conor's signature knockout move?</h3>
+<% if @move %>
+<p>Your answer - <%=@move%></p>
+<% if correctanswer?(@move) %>
+  <p style = "color: #33cc33">Your answer is correct</p>
+<% else %>
+	<p style = "color: #cc0000">Your answer is wrong</p>
+<% end %> 
+<% end %>
+<br>
+
+<h3>Before his fighting career began, Conor was training to be:</h3>
+<% if @job %>
+<p>Your answer - <%=@job%></p>
+<% if correctanswer?(@job) %>
+  <p style = "color: #33cc33">Your answer is correct</p>
+<% else %>
+	<p style = "color: #cc0000">Your answer is wrong</p>
+<% end %> 
+<% end %>
+</div>	

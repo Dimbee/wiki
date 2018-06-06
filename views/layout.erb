@@ -1,0 +1,50 @@
+<!-- code adopted from:
+#Title: "HTML5 Tutorial" 
+#Author: W3Schools Online Web Tutorials
+#Availability: https://www.w3schools.com/html/default.asp -->	
+
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewports" content = "width = device - width"/>
+			<meta name = "description" content = "Our First Web Application"/>
+			<meta name = "keywords" content = "wiki, application, ufc, mcgregor, conor"/>
+	<title>The Conor McGregor Wiki</title>	
+	<link rel = "stylesheet" href= "/style.css" type = "text/css" />
+</head>
+<body>
+	<header>
+		<h1 style = "font-family: Fira Sans">The Conor McGregor Wiki</h1><br>
+		<a href = "https://themaclife.com/" style = "color: #33cc33">The Mac Life</ahref>		
+		<div class = "navigate">
+			<a href = "/" class = "button">Home</a>
+			<a href = "about" class = "button">About</a>
+			<a href = "/createaccount" class = "button">Create Account</a>	
+			<a href = "/edit" class = "button1">Edit</a>
+			<a href = "/video" class = "button1">Watch Conor in Action</a>
+			<a href = "/map" class = "button2">Next UFC Event</a>
+			<a href = "/questions" class = "button2">How well do you know 
+			Conor?</a>
+				
+				<%if $credentials%>
+					<%if $credentials[0] !=''%><br>
+						<p style = "color: white">Logged in as<p>
+						<a href="/user/<%=$credentials[0]%>" style = "text-decoration: none; color: yellow"><b><%=$credentials[0]%></p></b><a>
+						<a href ="/logout" style = "color: white; text-decoration: none; font-size: 16px";>Logout</a><br><br>
+						<%if $credentials[0] =="Admin"%>
+							<a href = "/admincontrols" style = "color: white; text-decoration: none; font-size: 16px">Admin Controls</a>
+						<%end%>
+							<%else%>
+								<a href= "/login" class = "button2">Login</a>
+						<%end%>
+							<%else%>
+							<a href= "/login" class = "button2">Login</a>	
+				<%end%>					
+		</div>				
+	</header>
+
+	<%=yield%>
+	<footer class="footer" style="font-weight: bold; margin-bottom: 10px; border: 0px solid #333; padding: 1px 1px; color:white; text-align: center; position: fixed; bottom: -0; width: 60%; margin: auto;">© 2017 Created by: Dimitar Bakardzhiev and Ashley Lee</a>
+	</footer>
+</body>
